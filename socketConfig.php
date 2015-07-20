@@ -8,7 +8,7 @@ define('WEBSOCKET_MEMORY', '512M');
 //最大同时在线数
 define('WEBSOCKET_ONLINE', 50);
 //HOST
-define('WEBSOCKET_HOST', '10.1.102.56');
+define('WEBSOCKET_HOST', 'localhost');
 //PORT
 define('WEBSOCKET_PORT', 843);
 //允许的域名

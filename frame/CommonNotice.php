@@ -6,13 +6,16 @@
  */
 class CommonNotice{
     
+	/**
+	 * 企业qq通知，不同企业的企业qq的api是不同的
+	 */
 	public static function BusinessQQNotice($users,$title,$message,$type = 1,$isRich = 0){
 		if(empty($users) || empty($title) || empty($message)) return false;
 		
 		if($type == 1){//简单型
-			$url = "https://qq.4399houtai.com/open/api/send_msg.php";
+			$url = "SOMEURL";//FIXME 这里的url要根据实际情况修改
 		}else{//广播型
-			$url = "https://qq.4399houtai.com/open/api/broadcast.php";
+			$url = "SOMEURL";//FIXME 这里的url要根据实际情况修改
 		}
 		$jobNumber = implode(',', $users);
 		$url .= "?receiver=".$jobNumber."&title=".$title."&msg=".$message."&is_rich=".$isRich;
