@@ -1,0 +1,50 @@
+.container-full {
+	background: #222222;
+	padding: 20px;
+	height: 300px;
+	text-align: center;
+	top: 50%;
+	position: absolute;
+	margin-top: -150px;
+	width: 100%;
+}
+.container-full h3 {
+	color: #FFF;
+}
+.userIcon {
+	height: 96px;
+	width: 96px;
+	line-height: 96px;
+	margin: 20px auto 50px;
+	background: #FFF;
+	box-shadow: 0 0 15px #FFF;
+	border-radius: 96px;
+}
+.userIcon .glyphicon-user {
+	font-size: 50px;
+	line-height: 90px;
+}
+.revolve90 {
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+.switch-btn {
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	margin-left: 60px;
+}
+.container-full{
+	height: 320px;
+	top: 42%;
+}
+.form-control{
+	width: 300px;
+	display: inline;
+}
+.auth-span{
+	margin-top:5px;
+}
