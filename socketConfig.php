@@ -10,7 +10,7 @@ define('WEBSOCKET_ONLINE', 50);
 //HOST
 define('WEBSOCKET_HOST', 'localhost');
 //PORT
-define('WEBSOCKET_PORT', 843);
+define('WEBSOCKET_PORT', 1000);
 //允许的域名
 define('WEBSOCKET_DOMAIN', '');
 //接收缓冲区 最大字节

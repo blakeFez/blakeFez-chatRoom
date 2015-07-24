@@ -33,7 +33,7 @@ $(function($){
 	};
 	
 	$.ws.link = function(){
-		$.ws.obg = new WebSocket('ws://localhost:843/');
+		$.ws.obg = new WebSocket('ws://localhost:1000/');
 		
 		// 打开
 		$.ws.obg.onopen = function(){
