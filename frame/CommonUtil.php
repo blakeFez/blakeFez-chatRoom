@@ -58,7 +58,7 @@ class CommonUtil{
 	/**
 	 * 取消转义 数组
 	 */
-	function stripslashes_array($value) {
+	public static function stripslashes_array($value) {
 		if(is_array($value)){
 			$value = array_map(__FUNCTION__, $value);
 		}elseif(is_object($value)){
@@ -75,7 +75,7 @@ class CommonUtil{
 	/**
 	 * 给一个文件加锁，用于保证就一个系统在跑
 	 */
-	public function add_lock(){
+	public static function add_lock(){
 		$file = fopen(DIR_WEBSOCKET.'/lock.txt', 'w+');
 		if(!flock($file, LOCK_EX)){
 			fclose($file);

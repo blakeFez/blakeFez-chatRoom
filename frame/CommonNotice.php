@@ -13,9 +13,9 @@ class CommonNotice{
 		if(empty($users) || empty($title) || empty($message)) return false;
 		
 		if($type == 1){//简单型
-			$url = "SOMEURL";//FIXME 这里的url要根据实际情况修改
+			$url = QQMSGSEND;//FIXME 这里的url要根据实际情况修改
 		}else{//广播型
-			$url = "SOMEURL";//FIXME 这里的url要根据实际情况修改
+			$url = BROADCAST;//FIXME 这里的url要根据实际情况修改
 		}
 		$jobNumber = implode(',', $users);
 		$url .= "?receiver=".$jobNumber."&title=".$title."&msg=".$message."&is_rich=".$isRich;
